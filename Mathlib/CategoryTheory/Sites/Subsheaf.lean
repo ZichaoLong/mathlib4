@@ -98,7 +98,7 @@ instance {G G' : Subpresheaf F} (h : G ≤ G') : Mono (Subpresheaf.homOfLe h) :=
     NatTrans.ext <|
       funext fun U =>
         funext fun x =>
-          Subtype.ext <| (congr_arg Subtype.val <| (congr_fun (congr_app e U) x : _) : _)⟩
+          Subtype.ext <| (_root_.congr_arg Subtype.val <| (congr_fun (congr_app e U) x : _) : _)⟩
 
 @[reassoc (attr := simp)]
 theorem Subpresheaf.homOfLe_ι {G G' : Subpresheaf F} (h : G ≤ G') :
