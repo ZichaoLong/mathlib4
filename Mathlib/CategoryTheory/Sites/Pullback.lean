@@ -38,7 +38,7 @@ variable (A : Type u₁) [Category.{v₁} A]
 variable (J : GrothendieckTopology C) (K : GrothendieckTopology D)
 
 -- The assumptions so that we have sheafification
-variable [ConcreteCategory.{v₁} A] [PreservesLimits (forget A)] [HasColimits A] [HasLimits A]
+variable [HasForget.{v₁} A] [PreservesLimits (forget A)] [HasColimits A] [HasLimits A]
 variable [PreservesFilteredColimits (forget A)] [(forget A).ReflectsIsomorphisms]
 
 attribute [local instance] reflectsLimits_of_reflectsIsomorphisms
